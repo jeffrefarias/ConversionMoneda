@@ -54,9 +54,6 @@ async function getMonedas(){
    crearSelectMonedas();
 });
 
-async function ObtieneValorMoneda(){
-
-}
 
 async function convertirMoneda(){
     const cantidadInput = document.getElementById('cantidad');
@@ -90,7 +87,6 @@ async function convertirMoneda(){
 
     const EncuentroMoneda = ArrValorMoneda.find(objeto => objeto.moneda === selectInput);
 
-    // console.log(EncuentroMoneda);
 
     if (EncuentroMoneda) {
         const valorSeleccionado = EncuentroMoneda.valor;
