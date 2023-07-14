@@ -47,7 +47,7 @@ async function getMonedas(){
       });
     //   console.log(ArrUnidadesMedidaFiltrado);
     }catch{
-        // manejo de errores
+        throw new  Error("error al filtrar");
     }
    }
 
@@ -95,7 +95,7 @@ async function convertirMoneda(){
 
         document.getElementById("result").innerHTML = "La conversión final es de: " + calculado2TF + " " + EncuentroMoneda.moneda;
     } else {
-        // No se encontró el valor seleccionado en el array
+        console.log("No se encontró el valor seleccionado en el array");
     }
 
 
